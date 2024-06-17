@@ -235,6 +235,11 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 9106869127399030056, guid: ba79f8b94f4c63c4baa595ee29189a71, type: 3}
   m_PrefabInstance: {fileID: 8186947745684551575}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &348565855 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1427298199072696559, guid: ba79f8b94f4c63c4baa595ee29189a71, type: 3}
+  m_PrefabInstance: {fileID: 8186947745684551575}
+  m_PrefabAsset: {fileID: 0}
 --- !u!61 &348565856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -483,7 +488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 348565855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -816,10 +821,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9106869127399030056, guid: ba79f8b94f4c63c4baa595ee29189a71, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 210959081128701752, guid: ba79f8b94f4c63c4baa595ee29189a71, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1427298199072696559, guid: ba79f8b94f4c63c4baa595ee29189a71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519420032}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7964111284815470427, guid: ba79f8b94f4c63c4baa595ee29189a71, type: 3}
       insertIndex: -1
@@ -829,7 +841,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1818686332}
   - {fileID: 8186947745684551575}
